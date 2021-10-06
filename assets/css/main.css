@@ -1,17 +1,21 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
 }
+
+/* Variables */
 :root {
     --mainColor:#008aff;
-    --fontWeightLight: 300
+    --darkColorBlue: #13287e;
+    --grayColor: #474747;
+    --yallowColor: #ffe824
 }
-/*Start Top Header*/
-.top-header {
-    background-color: #ecf6fe;
-}
-/*End Top Header*/
 
 /*Start Header */
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
 .header .menu-website ul li a{
     color: var(--mainColor);
     display: block;
@@ -19,22 +23,55 @@ body {
     border-radius: 36px;
     text-decoration: none;
 }
+
 .header .menu-website ul li a:hover{
     background-color: var(--mainColor);
     color: #fff;
 }
+
 .header .menu-website ul li:last-child a{
     background-color: #ffe824;
     color: #474747;
     padding: 8px 15px;
 }
+
 /*End Header */
+
+/* Start Slider */
+.slider {
+    background-color: #f4f9ff;
+}
+.slider .slide {
+    background-repeat: no-repeat;
+    background-position:right top ;
+    height: 75vh;
+}
+/* End Slider */
+
+/* Classes */
 
 .blue-color {
     color: var(--mainColor);
 }
-.font-light {
-    font-weight: var(--fontWeightLight);
+.bg-blue {
+    background-color: #ecf6fe;
+}
+.dark-blue-color {
+    color: var(--darkColorBlue);
+}
+.gray-color {
+    color: var(--grayColor);
+}
+.btn-primary {
+    background-color: var(--yallowColor);
+    border-color: var(--yallowColor);
+    padding: 15px 40px ;
+    border-radius: 34px;
+    color: #686440;
+}
+.btn-primary:hover {
+    background-color: #e2ce1d;
+    border-color: #e2ce1d;
 }
 .close-menu,
 .show-menu {
