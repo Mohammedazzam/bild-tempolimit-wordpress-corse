@@ -207,6 +207,75 @@ body {
 }
 /*  End Plain Pricing */
 
+/* Start Section Discount */
+.deiscount {
+    padding-top: 180px;
+    padding-bottom: 70px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.deiscount .number-discount {
+    top: -12px;
+    width: 100px;
+    right: 50%;
+    transform: translateX(50%);
+    padding-top: 30px;
+    color: #fff;
+    font-size: 40px;
+    line-height: .8;
+    text-shadow: 2px 0 3px #6666665c;
+    background-image: url(../images/bg_number_descount.png);
+    background-size: cover;
+    height: 125px;
+}
+
+
+/* هذا كود للصورة بدل الي فوق
+.deiscount .number-discount {
+    top: -10px;
+    width: 74px;
+    background: var(--yallowColor);
+    right: 50%;
+    transform: translateX(50%);
+    padding-top: 20px;
+    color: #fff;
+    font-size: 40px;
+    line-height: .8;
+    text-shadow: 2px 0 3px #6666665c;
+}
+.deiscount .number-discount::before {
+    right: -7px;
+    border-color: transparent #292500 transparent transparent;
+    transform: rotate(-45deg);
+}
+.deiscount .number-discount::after {
+    left: -7px;
+    border-color: transparent transparent transparent #292500;
+    transform: rotate(45deg);
+}
+.deiscount .number-discount::before,
+.deiscount .number-discount::after{
+    content: '';
+    position: absolute;
+    border-style:solid;
+    border-width: 7px;
+    top: 3px;
+}
+.deiscount .number-discount .arrow-top{
+    border: 37px solid red;
+    border-color: #ffe824 #ffe824 #ffff0000 #ffe824;
+    position: absolute;
+    bottom: -44px;
+    z-index: -1;
+} */
+.deiscount h3 {
+    font-size: 60px;
+}
+/* End Section Discount */
+
+
 /* Classes */
 
 .blue-color {
