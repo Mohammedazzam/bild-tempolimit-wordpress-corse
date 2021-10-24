@@ -1,6 +1,5 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
-    height: 5000px;
 }
 
 /* Variables */
@@ -26,6 +25,7 @@ body {
     padding-bottom: 15px;
     box-shadow: 0 0 5px #e8e8e8;
 }
+.footer .footer-top a,
 .header .menu-website ul li a{
     color: var(--mainColor);
     display: block;
@@ -33,7 +33,7 @@ body {
     border-radius: 36px;
     text-decoration: none;
 }
-
+.footer .footer-top a:hover,
 .header .menu-website ul li a:hover{
     background-color: var(--mainColor);
     color: #fff;
@@ -280,7 +280,22 @@ body {
     height: 250px;
     object-fit: cover;
 }
-/*End Section Latest News*/
+/* End Section Latest News */
+
+/* Start Footer */
+.footer .newsleatter form input[type='submit']{
+    position: absolute;
+    right: 20px;
+    top: 60%;
+    background: none;
+    border: aliceblue;
+    transform: translateY(-60%);
+}
+.footer .newsleatter .social a{
+    font-size: 22px;
+}
+
+/* End Footer */
 
 /* Classes */
 
@@ -309,6 +324,11 @@ body {
 .btn-primary:hover {
     background-color: #e2ce1d;
     border-color: #e2ce1d;
+}
+.form-control {
+    border-color:#373737 ;
+    padding: 22px;
+    font-weight: 300;
 }
 .shadow {
     box-shadow: 0 0.5rem 1rem #eaeaeabf !important;
