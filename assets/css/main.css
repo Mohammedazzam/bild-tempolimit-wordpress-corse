@@ -275,6 +275,12 @@ body {
 }
 /* End Section Discount */
 
+/*Start Section Latest News*/
+.latest-news .img img {
+    height: 250px;
+    object-fit: cover;
+}
+/*End Section Latest News*/
 
 /* Classes */
 
