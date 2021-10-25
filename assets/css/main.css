@@ -485,8 +485,13 @@ body {
     display: none;
 }
 
-@media(max-width:776px){
-
+@media(max-width:996px) {
+    .container {
+        max-width: 90%;
+    }
+    .header {
+        top: 35px;
+    }
     .header .menu-website {
         position: fixed;
         width: 250px;
@@ -523,4 +528,57 @@ body {
         border-radius: 3px;
         font-size: 13px;
     }
+    .plain-pricing .row {
+        margin-right: -15px;
+        margin-left: 17px;
+    }
+    .plain-pricing .row .col-md-4 {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
 }
+
+@media(max-width:776px){
+    .header {
+        top: -0;
+    }
+    
+    .slider .slide {
+        background-image: none !important;
+    }
+    .slider .owl-nav {
+        bottom: 15px;
+        top: auto;
+        width: 35%;
+    }
+    .slider .owl-nav button {
+        width: 30px;
+        height: 30px;
+        font-size: 13px !important;
+        line-height: 36px !important;
+    }
+    .slider .owl-dots {
+        padding: 0 10px 7px;
+    }
+    .services .line {
+        width: 100%;
+        height: 1px !important;
+        margin-top:20px !important;
+        margin-bottom: 20px !important;
+    }
+    .like-line .circle{
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        margin-top: -75px;
+    }
+    .plain-pricing .desc,
+    .testimonial .desc{
+        width: 85% !important;
+    }
+    .box-post {
+        border: 1px solid #eee;
+        padding: 8px;
+    }
+}
+
