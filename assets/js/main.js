@@ -1,5 +1,10 @@
 $(function () {
 
+    //loading
+    setTimeout(function(){
+        $('.loading').fadeOut();
+    }, 5000)
+
     // Fixed Header
     $(window).scroll(function(){
         if($(this).scrollTop() > 30 ) {
@@ -7,7 +12,20 @@ $(function () {
         }else {
             $('.header').removeClass('fixed-header')
         }
+
+    //هذه خاصة بالسركول توب
+        if($(this).scrollTop() > 250 ) {
+            $('.btn-to-top').fadeIn()
+        }else {
+            $('.btn-to-top').fadeOut()
+        }
     });
+
+    $('.btn-to-top').click(function(){
+        $("html,body").animate({
+            scrollTop: 0
+        },1500)
+    })
 
     $(".show-menu").click(function () {
         $(".header .menu-website").addClass("show");
